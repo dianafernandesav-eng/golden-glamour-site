@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-display font-bold mb-4">
-              Failde <span className="text-gold">Seguros</span>
+              Dariana <span className="text-gold">Seguros</span>
             </h3>
             <p className="text-primary-foreground/70 text-sm">
               Tu socio de confianza en protección financiera. Más de 10 años protegiendo familias en todo Estados Unidos.
@@ -65,7 +65,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center gap-2 text-primary-foreground/70">
                 <Mail className="w-4 h-4 text-gold" />
-                contacto@faildeseguros.com
+                contacto@darianaseguros.com
               </li>
               <li className="flex items-center gap-2 text-primary-foreground/70">
                 <MapPin className="w-4 h-4 text-gold" />
@@ -77,7 +77,7 @@ const Footer = () => {
 
         <div className="border-t border-navy-light/30 pt-8">
           <p className="text-center text-primary-foreground/60 text-sm">
-            © {currentYear} Failde Seguros. Todos los derechos reservados.
+            © {currentYear} Dariana Seguros. Todos los derechos reservados.
           </p>
         </div>
       </div>
