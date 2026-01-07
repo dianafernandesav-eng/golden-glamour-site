@@ -56,7 +56,7 @@ const HeroSection = () => {
               <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden shadow-2xl">
                 <img
                   src={agentPortrait}
-                  alt="Failde Coraspe Hernandez - Agente de Seguros"
+                  alt="Dariana Velazco - Agente de Seguros"
                   className="w-full h-full object-cover"
                 />
               </div>
@@ -64,7 +64,7 @@ const HeroSection = () => {
               {/* Name card */}
               <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-card rounded-2xl shadow-xl p-4 min-w-[280px] text-center">
                 <h3 className="font-display font-bold text-lg text-foreground">
-                  Failde Coraspe Hernandez
+                  Dariana Velazco
                 </h3>
                 <p className="text-gold font-medium">Planes de Ahorro y Retiro</p>
               </div>

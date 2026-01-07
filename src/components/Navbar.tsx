@@ -20,7 +20,7 @@ const Navbar = () => {
           {/* Logo */}
           <a href="#inicio" className="flex items-center gap-2">
             <span className="text-2xl font-display font-bold text-primary-foreground">
-              Failde <span className="text-gold">Seguros</span>
+              Dariana <span className="text-gold">Seguros</span>
             </span>
           </a>
 
