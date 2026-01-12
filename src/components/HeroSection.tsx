@@ -1,5 +1,5 @@
 import { Phone, ArrowRight } from "lucide-react";
-import agentPortrait from "@/assets/agent-portrait.jpg";
+import agentPortrait from "@/assets/agent-portrait.png";
 
 const HeroSection = () => {
   return (
