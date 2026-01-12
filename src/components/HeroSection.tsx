@@ -1,5 +1,5 @@
 import { Phone, ArrowRight } from "lucide-react";
-import agentPortrait from "@/assets/agent-portrait.svg";
+import agentPortrait from "@/assets/agent-portrait.png";
 
 const HeroSection = () => {
   return (
@@ -50,11 +50,11 @@ const HeroSection = () => {
           <div className="relative flex justify-center lg:justify-end animate-slide-in-right" style={{ animationDelay: "0.2s" }}>
             <div className="relative">
               {/* Golden circle border with image inside */}
-              <div className="w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full border-4 border-gold overflow-hidden flex items-center justify-center bg-black">
+              <div className="w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full border-4 border-gold overflow-hidden flex items-center justify-center">
                 <img
                   src={agentPortrait}
                   alt="Dariana Velazco - Agente de Seguros"
-                  className="w-[140%] h-[140%] object-cover object-top mix-blend-lighten"
+                  className="w-[130%] h-[130%] object-cover object-top"
                 />
               </div>
 
