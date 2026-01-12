@@ -1,5 +1,5 @@
 import { Phone, ArrowRight } from "lucide-react";
-import agentPortrait from "@/assets/agent-portrait.png";
+import agentPortrait from "@/assets/agent-portrait.svg";
 
 const HeroSection = () => {
   return (
@@ -53,11 +53,11 @@ const HeroSection = () => {
               <div className="absolute inset-0 rounded-full border-4 border-gold scale-[1.05] translate-x-4 -translate-y-4" />
               
               {/* Image container */}
-              <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden shadow-2xl">
+              <div className="relative w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden shadow-2xl bg-transparent">
                 <img
                   src={agentPortrait}
                   alt="Dariana Velazco - Agente de Seguros"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-contain mix-blend-multiply"
                 />
               </div>
 
