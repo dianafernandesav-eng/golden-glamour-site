@@ -50,11 +50,11 @@ const HeroSection = () => {
           <div className="relative flex justify-center lg:justify-end animate-slide-in-right" style={{ animationDelay: "0.2s" }}>
             <div className="relative">
               {/* Golden circle border with image inside */}
-              <div className="w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full border-4 border-gold overflow-hidden flex items-center justify-center bg-transparent">
+              <div className="w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full border-4 border-gold overflow-hidden flex items-center justify-center bg-black">
                 <img
                   src={agentPortrait}
                   alt="Dariana Velazco - Agente de Seguros"
-                  className="w-full h-full object-contain mix-blend-multiply"
+                  className="w-[140%] h-[140%] object-cover object-top mix-blend-lighten"
                 />
               </div>
 
