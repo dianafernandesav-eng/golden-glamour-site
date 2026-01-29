@@ -45,8 +45,8 @@
     --cream: 40 33% 98%;
 
     /* Typography */
-    --font-display: 'Segoe UI', 'Segoe TV', -apple-system, BlinkMacSystemFont, sans-serif;
-    --font-body: 'Segoe UI', 'Segoe TV', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-display: 'Segoe TV Bold', 'Segoe TV', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Segoe TV Bold', 'Segoe TV', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
