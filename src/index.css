@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+/* Using system Segoe UI font */
 
 @layer base {
   :root {
@@ -45,8 +45,8 @@
     --cream: 40 33% 98%;
 
     /* Typography */
-    --font-display: 'Playfair Display', serif;
-    --font-body: 'Inter', sans-serif;
+    --font-display: 'Segoe UI', 'Segoe TV', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-body: 'Segoe UI', 'Segoe TV', -apple-system, BlinkMacSystemFont, sans-serif;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
