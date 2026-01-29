@@ -12,7 +12,7 @@ const HeroSection = () => {
               Licenciado en los 50 Estados
             </span>
             
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground leading-tight mb-6" style={{ fontFamily: "'Segoe UI', 'Segoe TV', sans-serif" }}>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-primary-foreground leading-tight mb-6">
               Protege el futuro{" "}
               <span className="text-gold">de tu familia</span>
             </h1>
