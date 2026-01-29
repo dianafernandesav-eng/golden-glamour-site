@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Phone, Mail, MapPin, Send } from "lucide-react";
+import { Phone, Mail, MapPin, Send, Loader2 } from "lucide-react";
+import { toast } from "@/hooks/use-toast";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -9,11 +10,45 @@ const ContactSection = () => {
     service: "",
     message: "",
   });
+  const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
-    console.log("Form submitted:", formData);
+    setIsLoading(true);
+
+    try {
+      const response = await fetch("https://formspree.io/f/xwpkgvvd", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        toast({
+          title: "¡Mensaje enviado correctamente!",
+          description: "Nos pondremos en contacto contigo pronto.",
+        });
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          service: "",
+          message: "",
+        });
+      } else {
+        throw new Error("Error al enviar el formulario");
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Hubo un problema al enviar tu mensaje. Inténtalo de nuevo.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -169,9 +204,22 @@ const ContactSection = () => {
                 />
               </div>
 
-              <button type="submit" className="btn-gold w-full justify-center text-base">
-                <Send className="w-5 h-5" />
-                Enviar Solicitud
+              <button 
+                type="submit" 
+                className="btn-gold w-full justify-center text-base"
+                disabled={isLoading}
+              >
+                {isLoading ? (
+                  <>
+                    <Loader2 className="w-5 h-5 animate-spin" />
+                    Enviando...
+                  </>
+                ) : (
+                  <>
+                    <Send className="w-5 h-5" />
+                    Enviar Solicitud
+                  </>
+                )}
               </button>
             </form>
           </div>
