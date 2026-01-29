@@ -1,4 +1,5 @@
 import { Shield, Award } from "lucide-react";
+import texasLicense from "@/assets/texas-license.png";
 
 const LicensesSection = () => {
   return (
@@ -45,18 +46,17 @@ const LicensesSection = () => {
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             {/* Texas License */}
             <div className="card-feature">
-              <div className="bg-muted rounded-xl p-8 mb-4 flex items-center justify-center min-h-[200px]">
-                <div className="text-center">
-                  <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-navy/10 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-navy">TX</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground">Documento de Licencia</p>
-                </div>
+              <div className="bg-white rounded-xl p-4 mb-4 flex items-center justify-center min-h-[200px]">
+                <img 
+                  src={texasLicense} 
+                  alt="Licencia de Texas - Life Agent" 
+                  className="w-full h-auto max-h-[300px] object-contain rounded-lg"
+                />
               </div>
               <div className="text-center">
                 <h4 className="font-display font-bold text-xl text-navy mb-1">Texas</h4>
-                <p className="text-muted-foreground">General Lines Agent</p>
-                <p className="text-sm text-muted-foreground">Licencia No. 3327744</p>
+                <p className="text-muted-foreground">Life Agent</p>
+                <p className="text-sm text-muted-foreground">Licencia No. 3302134 | NPN: 21492699</p>
               </div>
             </div>
 
