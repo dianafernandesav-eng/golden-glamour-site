@@ -5,37 +5,37 @@ const testimonials = [
     name: "María González",
     location: "Miami, FL",
     service: "Seguro de Vida Familiar",
-    text: "Failde nos ayudó a encontrar el plan perfecto para nuestra familia. Su conocimiento y paciencia fueron increíbles. Ahora dormimos tranquilos sabiendo que nuestros hijos están protegidos.",
+    text: "Dariana nos ayudó a encontrar el plan perfecto para nuestra familia. Su conocimiento y paciencia fueron increíbles. Ahora dormimos tranquilos sabiendo que nuestros hijos están protegidos.",
   },
   {
     name: "Roberto Martínez",
     location: "Houston, TX",
     service: "IUL (Index Universal Life)",
-    text: "La mejor decisión que tomamos fue contratar un IUL con Failde. No solo tenemos protección, sino que nuestros ahorros están creciendo. Su explicación fue clara y profesional.",
+    text: "La mejor decisión que tomamos fue contratar un IUL con Dariana. No solo tenemos protección, sino que nuestros ahorros están creciendo. Su explicación fue clara y profesional.",
   },
   {
     name: "Carmen Silva",
     location: "Los Angeles, CA",
     service: "Plan de Retiro",
-    text: "Excelente servicio. Failde me explicó todas las opciones sin presiones y encontramos el plan ideal para mi retiro. Su experiencia se nota en cada consejo.",
+    text: "Excelente servicio. Dariana me explicó todas las opciones sin presiones y encontramos el plan ideal para mi retiro. Su experiencia se nota en cada consejo.",
   },
   {
     name: "Jorge Ramírez",
     location: "Chicago, IL",
     service: "Mortgage Protector",
-    text: "Como dueño de negocio, necesitaba proteger mi empresa. Failde estructuró un plan completo que cubre a mis empleados clave. Muy recomendado.",
+    text: "Como dueño de negocio, necesitaba proteger mi empresa. Dariana estructuró un plan completo que cubre a mis empleados clave. Muy recomendado.",
   },
   {
     name: "Ana Fernández",
     location: "Phoenix, AZ",
     service: "Seguro Familiar",
-    text: "Contraté un seguro para mis padres mayores y Failde hizo todo el proceso súper fácil. Siempre disponible para responder preguntas. Un profesional.",
+    text: "Contraté un seguro para mis padres mayores y Dariana hizo todo el proceso súper fácil. Siempre disponible para responder preguntas. Una profesional.",
   },
   {
     name: "Pedro López",
     location: "Dallas, TX",
     service: "Ahorro Educativo",
-    text: "Llevo 3 años trabajando con Failde y cada año revisa mi póliza para asegurar que tengo la mejor cobertura. Ese nivel de servicio es difícil de encontrar.",
+    text: "Llevo 3 años trabajando con Dariana y cada año revisa mi póliza para asegurar que tengo la mejor cobertura. Ese nivel de servicio es difícil de encontrar.",
   },
 ];
 
