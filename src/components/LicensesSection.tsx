@@ -1,5 +1,55 @@
 import { Shield, Award } from "lucide-react";
 import texasLicense from "@/assets/texas-license.png";
+import kansasLicense from "@/assets/kansas-license.png";
+import indianaLicense from "@/assets/indiana-license.png";
+import alaskaLicense from "@/assets/alaska-license.png";
+import arkansasLicense from "@/assets/arkansas-license.png";
+import californiaLicense from "@/assets/california-license.jpeg";
+
+const licenses = [
+  {
+    state: "Texas",
+    image: texasLicense,
+    type: "Life Agent",
+    licenseNo: "3302134",
+    npn: "21492699"
+  },
+  {
+    state: "California",
+    image: californiaLicense,
+    type: "Insurance Producer - Life",
+    licenseNo: "4448840",
+    npn: "21492699"
+  },
+  {
+    state: "Kansas",
+    image: kansasLicense,
+    type: "Insurance Producer - Life",
+    licenseNo: "N/A",
+    npn: "21492699"
+  },
+  {
+    state: "Indiana",
+    image: indianaLicense,
+    type: "Non-Resident Producer - Life",
+    licenseNo: "4171766",
+    npn: "21492699"
+  },
+  {
+    state: "Alaska",
+    image: alaskaLicense,
+    type: "Insurance Producer - Life",
+    licenseNo: "3003901255",
+    npn: "21492699"
+  },
+  {
+    state: "Arkansas",
+    image: arkansasLicense,
+    type: "Insurance Producer - Life",
+    licenseNo: "21492699",
+    npn: "21492699"
+  }
+];
 
 const LicensesSection = () => {
   return (
@@ -17,7 +67,7 @@ const LicensesSection = () => {
         </div>
 
         {/* Main card */}
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="card-feature text-center py-12 mb-12 border-2 border-gold/30">
             <div className="icon-circle mx-auto mb-6 w-20 h-20">
               <Shield className="w-10 h-10" />
@@ -43,45 +93,31 @@ const LicensesSection = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 mb-8">
-            {/* Texas License */}
-            <div className="card-feature">
-              <div className="bg-white rounded-xl p-4 mb-4 flex items-center justify-center min-h-[200px]">
-                <img 
-                  src={texasLicense} 
-                  alt="Licencia de Texas - Life Agent" 
-                  className="w-full h-auto max-h-[300px] object-contain rounded-lg"
-                />
-              </div>
-              <div className="text-center">
-                <h4 className="font-display font-bold text-xl text-navy mb-1">Texas</h4>
-                <p className="text-muted-foreground">Life Agent</p>
-                <p className="text-sm text-muted-foreground">Licencia No. 3302134 | NPN: 21492699</p>
-              </div>
-            </div>
-
-            {/* California License */}
-            <div className="card-feature">
-              <div className="bg-muted rounded-xl p-8 mb-4 flex items-center justify-center min-h-[200px]">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+            {licenses.map((license) => (
+              <div key={license.state} className="card-feature">
+                <div className="bg-white rounded-xl p-4 mb-4 flex items-center justify-center min-h-[200px]">
+                  <img 
+                    src={license.image} 
+                    alt={`Licencia de ${license.state} - ${license.type}`} 
+                    className="w-full h-auto max-h-[250px] object-contain rounded-lg"
+                  />
+                </div>
                 <div className="text-center">
-                  <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-navy/10 flex items-center justify-center">
-                    <span className="text-2xl font-bold text-navy">CA</span>
-                  </div>
-                  <p className="text-sm text-muted-foreground">Documento de Licencia</p>
+                  <h4 className="font-display font-bold text-xl text-navy mb-1">{license.state}</h4>
+                  <p className="text-muted-foreground">{license.type}</p>
+                  <p className="text-sm text-muted-foreground">
+                    {license.licenseNo !== "N/A" && `Licencia No. ${license.licenseNo} | `}NPN: {license.npn}
+                  </p>
                 </div>
               </div>
-              <div className="text-center">
-                <h4 className="font-display font-bold text-xl text-navy mb-1">California</h4>
-                <p className="text-muted-foreground">Insurance Producer</p>
-                <p className="text-sm text-muted-foreground">Licencia No. 4425759</p>
-              </div>
-            </div>
+            ))}
           </div>
 
           {/* Additional info */}
           <div className="bg-muted rounded-2xl p-6 text-center mb-8">
             <p className="text-muted-foreground">
-              <span className="font-semibold text-navy">Además de estos estados</span>, cuento con licencias activas en los otros 46 estados de la nación, permitiéndome brindarte servicio profesional sin importar tu ubicación.
+              <span className="font-semibold text-navy">Además de estos estados</span>, cuento con licencias activas en los otros 44 estados de la nación, permitiéndome brindarte servicio profesional sin importar tu ubicación.
             </p>
           </div>
 
