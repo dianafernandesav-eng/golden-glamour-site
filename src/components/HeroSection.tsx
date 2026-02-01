@@ -18,7 +18,7 @@ const HeroSection = () => {
             </h1>
             
             <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-xl">
-              Con más de 10 años de experiencia, te ayudo a construir un futuro financiero seguro con soluciones de seguros personalizadas.
+              Con más de 6 años de experiencia, te ayudo a construir un futuro financiero seguro con soluciones de seguros personalizadas.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
