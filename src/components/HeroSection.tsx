@@ -36,7 +36,7 @@ const HeroSection = () => {
             {/* Stats */}
             <div className="flex gap-12">
               <div>
-                <span className="text-4xl md:text-5xl font-bold text-gold">10+</span>
+                <span className="text-4xl md:text-5xl font-bold text-gold">6+</span>
                 <p className="text-primary-foreground/80 mt-1">Años de Experiencia</p>
               </div>
               <div>
