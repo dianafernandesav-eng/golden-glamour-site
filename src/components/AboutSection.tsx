@@ -31,10 +31,10 @@ const AboutSection = () => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="section-badge mb-4 inline-block">Sobre Mí</span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-navy mb-6">
-            Tu Socio en Protección Financiera
+            Tu Socia en Protección Financiera
           </h2>
           <p className="text-muted-foreground text-lg">
-            Como agente de seguros licenciado en los 50 estados de Estados Unidos, mi misión es brindarte tranquilidad financiera. Con 10 años de experiencia, entiendo que cada familia es única y merece un plan personalizado que se adapte a sus necesidades específicas.
+            Como agente de seguros licenciada en los 50 estados de Estados Unidos, mi misión es brindarte tranquilidad financiera. Con 6 años de experiencia, entiendo que cada familia es única y merece un plan personalizado que se adapte a sus necesidades específicas.
           </p>
         </div>
 
